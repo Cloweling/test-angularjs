@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST ANGULARJS</title>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script defer src="/src/js/index.js"></script>
+  </head>
+  <body ng-app="Test" ng-controller="test2Controller">
+    <h1>Tests 2: Form</h1>
+    <hr />
+
+    <form class="form-inline">
+      <div class="form-component">
+        <label>is it odd?</label>
+        <input type="number" ng-model="input1" />
+        <span>{{result1}}</span>
+      </div>
+
+      <div class="form-component">
+        <label>are you older than 18?</label>
+        <input type="number" ng-model="input2" />
+        <span>{{result2}}</span>
+      </div>
+
+      <div class="form-component">
+        <label>What is the size of the text?</label>
+        <input type="text" ng-model="input3" />
+        <span>{{result3}}</span>
+      </div>
+
+      <button type="submit" ng-click="submit()">Submit</button>
+    </form>
+  </body>
+</html>
+
+<style>
+  .form-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-component {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .form-component span {
+    align-self: center;
+  }
+
+  .form-component label {
+    margin-bottom: 5px;
+  }
+
+  button {
+    margin-left: 10px;
+    height: 30px;
+  }
+</style>
