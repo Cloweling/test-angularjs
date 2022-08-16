@@ -6,14 +6,17 @@ To solve the two tests the tools that can be used are the following:
  * Browser Google Chrome or Safari
  * Use ECMAScript 5 or lower (does not allow arrow function)
 
-**When cloning the project please enter open the index.html with a browser**
+**When cloning the project please enter open the index.html with a browser or you can use vscode live server** 
 
 # TEST 1
 In the test1Controller of index.js please add the following logic:
 
+Consume the endpoint https://jsonplaceholder.typicode.com/posts with $http or jQuery.get
+
 Clicking the "Load Endpoint" button should load the first 10 elements of the endpoint https://jsonplaceholder.typicode.com/posts.
 
 Please check test1.html to see the structure and variables used in angularjs
+
 The display should look like this
 ![Test 1](/assets/test1.png)
 
